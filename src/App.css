@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Kanit:wght@600&family=Work+Sans:wght@500&display=swap');
+.wrapper {
+  position: absolute;
+  top: 0.5px;
+  left: 0;
+  right: 0;
+  bottom: 0.5px;
+  overflow-x: hidden; 
+  overflow-y: auto;
+}
+
+body {
+  background: url('./assets/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  min-height: 1024px;
+  margin-top: 10%;
+  color: white;
+}
+
+.hero-title {
+  text-shadow: 5px 10px 10px rgb(180, 180, 180, 0.8);
+  font-family: 'Fasthand', cursive;
+  font-size: 4rem;
+  font-weight: lighter;
+}
+.hero-subtitle {
+  font-family: 'Fasthand', cursive;
+  text-shadow: 5px 10px 10px rgb(180, 180, 180, 0.8);
+  font-size: 3rem;
+  margin-top: -10%;
+  font-weight: lighter;
+}
+
+.info-card {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px!important;
+  opacity: 90%;
+  margin-bottom: 10%;
+}
+.info-card-title {
+  text-align: center;
+  margin-bottom: 0;
+  font-family: 'Kanit', sans-serif;
+}
+.info-card-text {
+  font-family: 'Work Sans', sans-serif;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+.info-card-link {
+  color: black!important;
+}
+.footer {
+  background-color: rgba(31, 31, 31, 0.99);
+  color: white; 
+  min-height: 200px;
+  padding: 4%;
+}
+
+@media only screen and (min-width: 1000px) {
+  .hero {
+    color: black;
+  }
+  .hero-title {
+    margin-left: 35%;
+    font-weight: bold;
+    font-size: 8rem;
+  }
+  .hero-subtitle {
+    margin-left: 47%;
+    font-size: 6rem;
+    font-weight: bold;
+  }
+  .info-card {
+    width: 30%;
+  }
+}
