@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Kanit:wght@600&family=Work+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Play:wght@700&family=Kanit:wght@600&family=Work+Sans:wght@500&display=swap');
 .wrapper {
   position: absolute;
   top: 0.5px;
@@ -19,32 +19,66 @@ body {
 .hero {
   display: flex;
   flex-direction: column;
-  align-items:center;
-  min-height: 1024px;
+  align-items: center;
+  min-height: 92vh;
   margin-top: 10%;
-  color: white;
+  color: #da00b5;
 }
 
 .hero-title {
-  text-shadow: 5px 10px 10px rgb(180, 180, 180, 0.8);
-  font-family: 'Fasthand', cursive;
+  text-shadow: 5px 5px 5px black;
+  font-family: 'Play', sans-serif;
   font-size: 4rem;
-  font-weight: lighter;
+  text-align: center;
+  cursor: default;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #910059;
 }
 .hero-subtitle {
   font-family: 'Fasthand', cursive;
-  text-shadow: 5px 10px 10px rgb(180, 180, 180, 0.8);
+  text-shadow: 5px 5px 5px black;
   font-size: 3rem;
-  margin-top: -10%;
   font-weight: lighter;
+  cursor: default;
+  color: #da00b5;
+  /* -webkit-text-stroke-width: .01px;
+  -webkit-text-stroke-color: #910059; */
+}
+.down-arrow-svg {
+  height: 55px;
+  margin-top: auto;
+  margin-bottom: 20%;
+  cursor: pointer;
+}
+@keyframes glowing {
+  0% {
+    filter: drop-shadow(0 0 2px #dbdbdb);
+  }
+  50% {
+    filter: drop-shadow(0 0 5px #ffffff);
+  }
+  100% {
+    filter: drop-shadow(0 0 2px #dbdbdb);
+  }
+}
+.down-arrow-svg {
+  animation: glowing 1300ms infinite;
+}
+
+.info-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
 }
 
 .info-card {
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10px!important;
   opacity: 90%;
-  margin-bottom: 10%;
+  flex: 8;
+  margin: 3%;
+  border-color: #da00b5!important;
 }
 .info-card-title {
   text-align: center;
@@ -68,19 +102,44 @@ body {
 
 @media only screen and (min-width: 1000px) {
   .hero {
-    color: black;
   }
   .hero-title {
     margin-left: 35%;
+    margin-bottom: 6.5%;
     font-weight: bold;
     font-size: 8rem;
+    text-shadow: 5px 10px 10px rgb(180, 180, 180, 0.8);
+
   }
   .hero-subtitle {
-    margin-left: 47%;
+    margin-left: 67%;
     font-size: 6rem;
     font-weight: bold;
+    margin-top: -10%;
+    text-shadow: 5px 10px 10px rgb(180, 180, 180, 0.8);
   }
-  .info-card {
-    width: 30%;
+  .down-arrow-svg {
+    filter: drop-shadow(5px 5px 5px black);
+    margin-left: auto;
+    margin-right: 14%;
+    margin-top: -6%;
+  }
+  @keyframes glowing {
+    0% {
+      filter: drop-shadow(0 0 2px #000000);
+    }
+    50% {
+      filter: drop-shadow(0 0 5px #3b3b3b);
+    }
+    100% {
+      filter: drop-shadow(0 0 2px #000000);
+    }
+  }
+  .down-arrow-svg {
+    animation: glowing 1300ms infinite;
+  }
+  .info-card-container {
+    display: flex;
+    flex-direction: row;
   }
 }

@@ -1,12 +1,10 @@
-import { Button, Card, CardActions, CardContent, Grid, Link } from "@mui/material"
+import { Button, Card, CardActions, CardContent, Link } from "@mui/material"
 
 const Intro = () => {
   return (
-    <>
+    <div className='info-card-container' id='info-cards'>
     {/* Todo
         Make grid look nice, bigger cards on desktop */}
-        <Grid container direction='row' justifyContent='center' rowSpacing={1} columnSpacing={{xs: 1, sm: 2, md: 3}}>
-          <Grid item xs={8} lg={6} >
             <Card variant='outlined' className='info-card'>
         <h1 className="info-card-title">Test Card</h1>
         <CardContent>
@@ -27,8 +25,6 @@ const Intro = () => {
             
         </CardActions>
       </Card>
-          </Grid>
-          <Grid item xs={8} lg={6}>
             <Card variant='outlined' className='info-card'>
         <h1 className="info-card-title">Test Card</h1>
         <CardContent>
@@ -49,8 +45,6 @@ const Intro = () => {
             
         </CardActions>
       </Card>
-          </Grid>
-          <Grid item xs={8} lg={6}>
             <Card variant='outlined' className='info-card'>
         <h1 className="info-card-title">Test Card</h1>
         <CardContent>
@@ -71,8 +65,6 @@ const Intro = () => {
             
         </CardActions>
       </Card>
-          </Grid>
-          <Grid item xs={8} lg={6}>
             <Card variant='outlined' className='info-card'>
         <h1 className="info-card-title">Test Card</h1>
         <CardContent>
@@ -93,9 +85,7 @@ const Intro = () => {
             
         </CardActions>
       </Card>
-          </Grid>
-        </Grid>
-    </>
+    </div>
   )
 }
 
