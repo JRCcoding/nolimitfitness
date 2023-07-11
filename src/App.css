@@ -33,6 +33,7 @@ body {
   cursor: default;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #910059;
+  
 }
 .hero-subtitle {
   font-family: 'Fasthand', cursive;
@@ -41,8 +42,7 @@ body {
   font-weight: lighter;
   cursor: default;
   color: #da00b5;
-  /* -webkit-text-stroke-width: .01px;
-  -webkit-text-stroke-color: #910059; */
+  margin-top: 0;
 }
 .down-arrow-svg {
   height: 55px;
@@ -70,15 +70,17 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 5%;
+  padding-bottom: 20%;
 }
 
 .info-card {
   margin-left: auto;
   margin-right: auto;
-  opacity: 90%;
+  opacity: 95%;
   flex: 8;
   margin: 3%;
   border-color: #da00b5!important;
+  box-shadow: 3px 5px 5px #da00b5;
 }
 .info-card-title {
   text-align: center;
@@ -112,7 +114,7 @@ body {
 
   }
   .hero-subtitle {
-    margin-left: 67%;
+    margin-left: 59%;
     font-size: 6rem;
     font-weight: bold;
     margin-top: -10%;
