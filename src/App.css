@@ -81,7 +81,7 @@ body {
   margin: 3%;
   border-color: #da00b5!important;
   box-shadow: 3px 5px 5px #da00b5;
-  /* height: 500px; */
+  height: 363px;
   justify-content: space-between;
 }
 .info-card-title {
@@ -124,14 +124,16 @@ body {
     margin-left: 59%;
     font-size: 6rem;
     font-weight: bold;
-    margin-top: -10%;
+    margin-top: -8%;
     text-shadow: 5px 10px 10px rgb(180, 180, 180, 0.8);
   }
   .down-arrow-svg {
     filter: drop-shadow(5px 5px 5px black);
     margin-left: auto;
     margin-right: 14%;
-    margin-top: -6%;
+    scale: 1.75;
+margin-top: -2.75%;
+/* margin-top: -6% */
   }
   @keyframes glowing {
     0% {

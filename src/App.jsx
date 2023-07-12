@@ -1,3 +1,4 @@
+// import { useRouter } from 'next/router'
 import Fade from 'react-reveal/Fade'
 import './App.css'
 import Footer from './components/Footer'
