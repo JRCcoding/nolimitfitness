@@ -125,7 +125,7 @@ Please note that while I am currently working on obtaining certification as a nu
           {/* <Button>
                 See more...
             </Button> */}
-            <Button className='info-card-link' sx={{ textDecoration: 'none', color: 'black', marginLeft: '1%' }}><PhoneIphoneIcon />{isMobile ? <a href='tel:4328895922' style={{color: 'black', textDecoration: 'none'}}>&nbsp;Phone</a> : '   (432) 889-5922' }</Button>
+            <Button className='info-card-link' sx={isMobile ? {textDecoration: 'none', color: 'black',marginLeft: '1.65%'} : {textDecoration: 'none', color: 'black',marginLeft: '1%'} }><PhoneIphoneIcon />{isMobile ? <a href='tel:4328895922' style={{color: 'black', textDecoration: 'none'}}>&nbsp;Phone</a> : '   (432) 889-5922' }</Button>
           {/* <Link href='/about' sx={{ textDecoration: 'none', color: 'black' }}>
             <Button className='info-card-link'>Email</Button>
           </Link> */}
