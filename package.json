@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build && cd dist && echo nolimitfitness.surge.sh > CNAME",
+    "build": "vite build && cd dist && echo nolimitfitness.us > CNAME",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
