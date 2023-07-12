@@ -9,13 +9,12 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
   bgcolor: 'background.paper',
   border: '2px solid #000',
   p: 4,
   borderRadius: '5px',
   borderColor: '#da00b5',
-  boxShadow: '3px 5px 5px #da00b5'
+  boxShadow: '3px 5px 5px #da00b5',
 };
 const Intro = () => {
   const [open, setOpen] = useState(false);
@@ -60,8 +59,9 @@ const Intro = () => {
   onClose={handleClose}
   aria-labelledby="modal-modal-title"
   aria-describedby="modal-modal-description"
+  className='modal-container'
 >
-  <Box sx={style}>
+  <Box sx={style} className='modal'>
     <Typography id="modal-modal-title" variant="h6" component="h2">
       Valerie Turner<Button onClick={handleClose}style={{float: 'right', marginRight: '5%', color: 'pink', scale: '2'}}>X</Button>
     </Typography>
@@ -71,8 +71,6 @@ const Intro = () => {
 Since 2016, I&apos;ve been on a personal training journey, constantly challenging myself and expanding my knowledge in the field of fitness. In 2021, I made the decision to share my expertise with others and began training clients professionally. While I am not yet certified as a nutritional coach, I am actively working towards obtaining my certification to further enhance my ability to support your dietary needs.<br /><br />
 
 In addition to personal training, I&apos;m also working towards certification in flexibility and mobility. This additional specialization will enable me to design holistic programs that enhance your overall fitness, improve range of motion, and prevent injuries. By combining effective training techniques and my evolving knowledge in nutrition, I aim to help you reach your full potential.<br /><br />
-
-Join me on this exciting journey towards a healthier lifestyle. Together, we&apos;ll overcome challenges, celebrate milestones, and create lasting changes that will positively impact your well-being.<br />
 
 Please note that while I am currently working on obtaining certification as a nutritional coach, it&apos;s important for you to consider your specific needs and consult with a certified professional for detailed nutrition advice or dietary concerns.</Typography>
   </Box>

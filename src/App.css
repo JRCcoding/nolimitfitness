@@ -108,6 +108,9 @@ body {
   min-height: 200px;
   padding: 4%;
 }
+.modal {
+  width: 75%; 
+}
 
 @media only screen and (min-width: 1000px) {
   .hero {
@@ -134,6 +137,9 @@ body {
     scale: 1.75;
 margin-top: -2.75%;
 /* margin-top: -6% */
+  }
+  .modal {
+    width: 20%;
   }
   @keyframes glowing {
     0% {
