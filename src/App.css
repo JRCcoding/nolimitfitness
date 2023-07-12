@@ -84,6 +84,17 @@ body {
   height: 363px;
   justify-content: space-between;
 }
+.info-card-about {
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 97.5%;
+  flex: 6;
+  margin: 3%;
+  border-color: #da00b5!important;
+  box-shadow: 3px 5px 5px #da00b5;
+  height: 363px;
+  justify-content: space-between;
+}
 .info-card-title {
   text-align: center;
   margin-bottom: 0;

@@ -1,9 +1,13 @@
-import { Button, Card, CardActions, CardContent, Link } from '@mui/material';
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
+import { Button, Card, CardActions, CardContent, CardMedia } from '@mui/material';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Typography from '@mui/material/Typography';
-import { useState } from 'react';
-
+import { useEffect, useState } from 'react';
+import Valerie from '../assets/valerie.jpg';
+import ContactForm from './ContactForm';
 const style = {
   position: 'absolute',
   top: '50%',
@@ -20,6 +24,32 @@ const Intro = () => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const [open2, setOpen2] = useState(false);
+  const handleOpen2 = () => setOpen2(true);
+  const handleClose2 = () => setOpen2(false)
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkWindowWidth = () => {
+      const isMobile = window.innerWidth <= 768; // Adjust the breakpoint as needed
+      setIsMobile(isMobile);
+    };
+
+    // Initial check on component mount
+    checkWindowWidth();
+
+    // Add event listener to update when window is resized
+    window.addEventListener('resize', checkWindowWidth);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', checkWindowWidth);
+    };
+  }, []);
+
+  const handleNewTab = (url) => {
+    window.open(url, "_blank", "noreferrer")
+  }
   return (
     <div className='info-card-container' id='info-cards'>
       {/* Todo
@@ -27,7 +57,7 @@ const Intro = () => {
       <Card variant='outlined' className='info-card'>
         <h1 className='info-card-title'>Training</h1>
         <CardContent>
-          <p className='info-card-text'>
+          <p className='info-card-text' style={{marginBottom: '0', marginTop: '40px'}}>
             Embark on a transformative fitness journey with a dedicated personal
             trainer. Tailored training programs designed for your goals and
             abilities. From proper form to pushing limits, experience
@@ -35,15 +65,18 @@ const Intro = () => {
             desire.
           </p>
         </CardContent>
-        <CardActions
-          className='info-card-links'
-          sx={{ justifyContent: 'space-around' }}
-        >
-        </CardActions>
       </Card>
 
-      <Card variant='outlined' className='info-card'>
+      <Card variant='outlined' className='info-card-about' sx={{height: 'auto'}}>
+        
         <h1 className='info-card-title'>About Valerie</h1>
+        <div style={{borderTop: 'solid #da00b5 2px', borderBottom: 'solid #da00b5 2px' }}>
+        <CardMedia
+        component='img'
+        alt='Valerie Turner Personal Trainer Midland Texas'
+        image={Valerie}
+        sx={{filter: 'grayscale(100%)', height: '320px'}}
+        ></CardMedia></div>
         <CardContent>
           <p className='info-card-text'>
           Meet Valerie, on a mission to help you achieve your fitness goals. Offering personalized training programs, ongoing nutritional guidance, and a focus on flexibility and mobility. Experience transformative workouts and a supportive environment to reach your full potential.
@@ -87,23 +120,30 @@ Please note that while I am currently working on obtaining certification as a nu
         </CardContent>
         <CardActions
           className='info-card-links'
-          sx={{ justifyContent: 'space-around' }}
+          sx={{ justifyContent: 'space-around', alignItems: 'flex-start' }}
         >
           {/* <Button>
                 See more...
             </Button> */}
-          <Link href='/about' sx={{ textDecoration: 'none', color: 'black' }}>
-            <Button className='info-card-link'>Phone</Button>
-          </Link>
-          <Link href='/about' sx={{ textDecoration: 'none', color: 'black' }}>
+            <Button className='info-card-link' sx={{ textDecoration: 'none', color: 'black', marginLeft: '1%' }}><PhoneIphoneIcon />{isMobile ? <a href='tel:4328895922' style={{color: 'black', textDecoration: 'none'}}>&nbsp;Phone</a> : '   (432) 889-5922' }</Button>
+          {/* <Link href='/about' sx={{ textDecoration: 'none', color: 'black' }}>
             <Button className='info-card-link'>Email</Button>
-          </Link>
-          <Link href='/about' sx={{ textDecoration: 'none', color: 'black' }}>
-            <Button className='info-card-link'>Facebook</Button>
-          </Link>
-          <Link href='/about' sx={{ textDecoration: 'none', color: 'black' }}>
-            <Button className='info-card-link'>Contact Form</Button>
-          </Link>
+          </Link> */}
+            <Button className='info-card-link' sx={{ textDecoration: 'none', color: 'black' }} onClick={() => handleNewTab('https://www.facebook.com/valerie.corey.75?mibextid=LQQJ4d')}><FacebookIcon />Facebook</Button>
+            <Button className='info-card-link' sx={{ textDecoration: 'none', color: 'black' }} onClick={(() => handleOpen2())}><AlternateEmailIcon />Contact Form</Button>
+            <Modal
+  open={open2}
+  onClose={handleClose2}
+  aria-labelledby="modal-modal-title"
+  aria-describedby="modal-modal-description"
+  className='modal-container'
+  style={{width: '80%', marginLeft: 'auto', marginRight: 'auto'}}
+>
+  <Box sx={style} className='modal'>
+    
+          <ContactForm />
+  </Box>
+</Modal>
         </CardActions>
       </Card>
     </div>
