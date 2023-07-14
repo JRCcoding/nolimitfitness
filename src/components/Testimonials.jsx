@@ -11,7 +11,7 @@ const Testimonials = () => {
   return (
     <div id='testimonials' className='testi-container'>
         {/* <h1 style={{textAlign: 'center', fontSize: '50px', fontFamily: 'Kanit'}}>Testimonials</h1> */}
-      <Carousel showIndicators={true} swipeable={true} emulateTouch={true} showThumbs={false} className='carousel'>
+      <Carousel infiniteLoop={true} autoPlay={true} interval={5000} showIndicators={true} swipeable={true} emulateTouch={true} showThumbs={false} className='carousel'>
                 <div>
                     <img src={testimonial_1} />
                     <p className="legend">Emily, 1 year</p>
