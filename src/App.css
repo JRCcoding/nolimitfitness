@@ -19,36 +19,25 @@ body {
 .hero {
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
   min-height: 92vh;
   margin-top: 10%;
-  color: #da00b5;
+  color: #dc5265;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.hero-title {
-  text-shadow: 5px 5px 5px black;
-  font-family: 'Play', sans-serif;
-  font-size: 4rem;
-  text-align: center;
-  cursor: default;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #910059;
-  
-}
-.hero-subtitle {
-  font-family: 'Fasthand', cursive;
-  text-shadow: 5px 5px 5px black;
-  font-size: 3rem;
-  font-weight: lighter;
-  cursor: default;
-  color: #da00b5;
-  margin-top: 0;
+.logo {
+  width: 340px;
+  filter: drop-shadow(0 0 15px gray);
 }
 .down-arrow-svg {
-  height: 55px;
-  margin-top: auto;
+  height: 75px;
+  margin-top: 80%;
   margin-bottom: 20%;
   cursor: pointer;
+  filter: drop-shadow(0 0 15px black);
 }
 @keyframes glowing {
   0% {
@@ -68,6 +57,8 @@ body {
 .info-card-container {
   display: flex;
   flex-direction: column;
+  flex: 4;
+  flex-wrap: wrap;
   align-items: center;
   padding: 5%;
   padding-bottom: 20%;
@@ -79,8 +70,8 @@ body {
   opacity: 97.5%;
   flex: 8;
   margin: 3%;
-  border-color: #da00b5!important;
-  box-shadow: 3px 5px 5px #da00b5;
+  border-color: #dc5265!important;
+  box-shadow: 3px 5px 5px #dc5265;
   height: 363px;
   justify-content: space-between;
 }
@@ -90,8 +81,8 @@ body {
   opacity: 97.5%;
   flex: 6;
   margin: 3%;
-  border-color: #da00b5!important;
-  box-shadow: 3px 5px 5px #da00b5;
+  border-color: #dc5265!important;
+  box-shadow: 3px 5px 5px #dc5265;
   height: 363px;
   justify-content: space-between;
 }
@@ -122,9 +113,30 @@ body {
 .modal {
   width: 75%; 
 }
-
+.legend {
+  opacity: 100%!important;
+  font-size: 25px!important;
+}
+.carousel {
+  border-color: #dc5265;
+  box-shadow: 3px 5px 5px #dc5265;
+}
+.up-arrow-svg {
+  height: 100px;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 20%;
+  cursor: pointer;
+  filter: drop-shadow(0 0 15px black);
+  margin-left: auto;
+  margin-right: auto;
+}
 @media only screen and (min-width: 1000px) {
-  .hero {
+  .logo {
+    width: 70%;
+    float: right;
+    margin-top: -25%;
+    margin-right: -15%;
   }
   .hero-title {
     margin-left: 35%;
@@ -146,8 +158,7 @@ body {
     margin-left: auto;
     margin-right: 14%;
     scale: 1.75;
-margin-top: -2.75%;
-/* margin-top: -6% */
+    margin-top: -15%;
   }
   .modal {
     width: 20%;
@@ -170,4 +181,22 @@ margin-top: -2.75%;
     display: flex;
     flex-direction: row;
   }
+  .info-card {
+    /* flex: 12; */
+    flex-basis: 26%
+  }
+  .info-card-about {
+    flex-basis: 26%
+  }
+  .second-down-arrow-svg {
+    margin-right: auto;
+    margin-left: 11%;
+    margin-top: -7.5%;
+  }
+  .testi-container {
+    max-width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
