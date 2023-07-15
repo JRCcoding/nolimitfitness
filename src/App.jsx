@@ -15,7 +15,9 @@ function App() {
       <Fade bottom big >
         <Intro />
       </Fade>
-      <Testimonials />
+      <Fade bottom big >
+        <Testimonials />
+      </Fade>
     </div>
   )
 }

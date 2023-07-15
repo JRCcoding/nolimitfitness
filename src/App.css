@@ -62,6 +62,7 @@ body {
   align-items: center;
   padding: 5%;
   padding-bottom: 20%;
+  margin-top: 50%;
 }
 
 .info-card {
@@ -121,16 +122,57 @@ body {
   border-color: #dc5265;
   box-shadow: 3px 5px 5px #dc5265;
 }
+.info-card-testis {
+  opacity: 97.5%;
+  flex: 8;
+  margin: 5%;
+  margin-top: 50%;
+  border-color: #dc5265!important;
+  box-shadow: 3px 5px 5px #dc5265;
+  justify-content: space-between;
+}
+.testi-name {
+  display: inline;
+  align-self: first baseline;
+  font-family: 'Kanit', sans-serif; 
+  margin-left: auto;
+  margin-right: auto;
+}
+.testi-thumb {
+  width: 90%;
+  height: auto;
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+}
+.testi-left {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.testi-right {
+  display: flex;
+  flex-direction: column-reverse;
+}
 .up-arrow-svg {
   height: 100px;
   width: 100%;
-  margin-top: 5%;
+  /* margin-top: 5%; */
   margin-bottom: 20%;
   cursor: pointer;
   filter: drop-shadow(0 0 15px black);
   margin-left: auto;
   margin-right: auto;
 }
+.contact-bottom {
+  color: #dc5265;
+  /* color: white; */
+  text-align: center;
+  margin-top: -20%;
+  font-size: 35px;
+  font-family: 'Kanit';
+  text-shadow: 2px 4px 5px black;
+}
+
 @media only screen and (min-width: 1000px) {
   .logo {
     width: 70%;
@@ -194,9 +236,43 @@ body {
     margin-top: -7.5%;
   }
   .testi-container {
-    max-width: 35%;
+    /* max-width: 35%;
     margin-left: auto;
     margin-right: auto;
-  }
+    border: solid 1px #dc5265;
+    background: rgb(255,255,255, 0.95);
+    border-radius: 5px; */
 
+  }
+  .up-arrow-svg {
+    margin-top: 5%;
+  }
+  .info-card-testis {
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 97.5%;
+    flex: 8;
+    margin: 5% 25%;
+    border-color: #dc5265!important;
+    box-shadow: 3px 5px 5px #dc5265;
+    justify-content: space-between;
+  }
+  .testi-name {
+    display: inline;
+    align-self: first baseline;
+    font-family: 'Kanit', sans-serif;
+
+  }
+  .testi-thumb {
+    height: 250px;
+    display: inline;
+  }
+  .testi-left {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .testi-right {
+    display: flex;
+    flex-direction: row;
+  }
 }
