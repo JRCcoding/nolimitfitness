@@ -265,6 +265,7 @@ body {
   }
   .testi-thumb {
     height: 250px;
+    width: auto;
     display: inline;
   }
   .testi-left {
