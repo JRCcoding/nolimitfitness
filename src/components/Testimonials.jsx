@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unknown-property */
 import { Card, CardContent } from "@mui/material";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import testimonial_blank from '../assets/silhouette.jpg';
 import testimonial_1 from '../assets/testimonial_1.jpg';
 import testimonial_2 from '../assets/testimonial_2.jpg';
 
@@ -22,7 +23,7 @@ const Testimonials = () => {
                 </div>
             </Carousel> */}
       <Card variant='outlined' className='info-card-testis'>
-        <h1 className='info-card-title'>Clients</h1>
+        <h1 className='info-card-title'>Testimonials</h1>
         <CardContent>
           <hr/>
           <div className='testi-left'>  
@@ -33,6 +34,12 @@ const Testimonials = () => {
           <div className='testi-right'>
             <img src={testimonial_2} alt='No Limit Fitness Testimonials' className='testi-thumb'/>
             <h2 className='testi-name'>Emily</h2>
+          </div>
+          <hr/>
+          <div className='testi-left' >
+            <img style={{marginRight: '10%'}} className='testi-thumb' src={testimonial_blank} alt='No Limit Fitness Midland Texas'/>
+            <h2 className='testi-name'>Mylinda</h2>
+            <p style={{marginLeft: '15%', fontStyle: 'italic'}}>&apos;&apos;Hi, my name is Mylinda and I’m 60 years old. I have been with Valerie just over a month. I do have some limitations on what I can and can’t do. With that being said she always has an alternative way for me to accomplish the workout. I have discovered that you&apos;re never too old or out of shape to do what your heart desires. Valerie is an amazing trainer and she will gently push you to your fullest potential. I look forward to going to class!!!&apos;&apos;   </p>
           </div>
         </CardContent>
       </Card>
