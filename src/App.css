@@ -137,6 +137,7 @@ body {
   font-family: 'Kanit', sans-serif; 
   margin-left: auto;
   margin-right: auto;
+  font-size: 40px;
 }
 .testi-thumb {
   width: 90%;
@@ -152,6 +153,12 @@ body {
 .testi-right {
   display: flex;
   flex-direction: column-reverse;
+}
+.testi-quote {
+  margin-left: 15%;
+  margin-right: 15%;
+  font-style: italic;
+  font-size: 20px;
 }
 .up-arrow-svg {
   height: 100px;
@@ -235,14 +242,9 @@ body {
     margin-left: 11%;
     margin-top: -7.5%;
   }
-  .testi-container {
-    /* max-width: 35%;
-    margin-left: auto;
-    margin-right: auto;
-    border: solid 1px #dc5265;
-    background: rgb(255,255,255, 0.95);
-    border-radius: 5px; */
-
+  .info-card-testis {
+    margin-left: 15%;
+    margin-right: 15%;
   }
   .up-arrow-svg {
     margin-top: 5%;
@@ -275,5 +277,8 @@ body {
   .testi-right {
     display: flex;
     flex-direction: row;
+  }
+  .testi-quote {
+    margin-right: 25px;
   }
 }

@@ -28,18 +28,20 @@ const Testimonials = () => {
           <hr/>
           <div className='testi-left'>  
             <img src={testimonial_1} alt='No Limit Fitness Testimonials' className='testi-thumb'/>        
+            <p className='testi-quote' style={{width: '100%'}}></p>
             <h2 className='testi-name'>Christina</h2>
           </div>
           <hr/>
           <div className='testi-right'>
             <img src={testimonial_2} alt='No Limit Fitness Testimonials' className='testi-thumb'/>
+            <p className='testi-quote'>&apos;&apos;Working with Valerie has been amazing. I couldn’t even do battle rope when first starting out now I can consistently do them. I feel better, I can move better and in general I am way healthier than I have been! Her class help a lot because they are designed to push you and motivate you to work out…all you have to do is get inside her door. Truly is the best motivation.&apos;&apos;</p>
             <h2 className='testi-name'>Emily</h2>
           </div>
           <hr/>
           <div className='testi-left' >
-            <img style={{marginRight: '10%'}} className='testi-thumb' src={testimonial_blank} alt='No Limit Fitness Midland Texas'/>
+            <img className='testi-thumb' src={testimonial_blank} alt='No Limit Fitness Midland Texas'/>
+            <p className='testi-quote'>&apos;&apos;Hi, my name is Mylinda and I’m 60 years old. I have been with Valerie just over a month. I do have some limitations on what I can and can’t do. With that being said she always has an alternative way for me to accomplish the workout. I have discovered that you&apos;re never too old or out of shape to do what your heart desires. Valerie is an amazing trainer and she will gently push you to your fullest potential. I look forward to going to class!!!&apos;&apos;   </p>
             <h2 className='testi-name'>Mylinda</h2>
-            <p style={{marginLeft: '15%', fontStyle: 'italic'}}>&apos;&apos;Hi, my name is Mylinda and I’m 60 years old. I have been with Valerie just over a month. I do have some limitations on what I can and can’t do. With that being said she always has an alternative way for me to accomplish the workout. I have discovered that you&apos;re never too old or out of shape to do what your heart desires. Valerie is an amazing trainer and she will gently push you to your fullest potential. I look forward to going to class!!!&apos;&apos;   </p>
           </div>
         </CardContent>
       </Card>
