@@ -29,8 +29,10 @@ body {
   margin-right: auto;
 }
 .logo {
-  width: 340px;
+  width: 100vw;
   filter: drop-shadow(0 0 15px gray);
+  background-color: #eba4ae;
+  margin-top: 25%;
 }
 .down-arrow-svg {
   height: 75px;
@@ -184,8 +186,10 @@ body {
   .logo {
     width: 70%;
     float: right;
-    margin-top: -25%;
+    margin-top: -5%;
     margin-right: -15%;
+    margin-bottom: 15%;
+    background: none;
   }
   .hero-title {
     margin-left: 35%;
