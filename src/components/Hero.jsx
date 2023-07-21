@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unknown-property */
 import Fade from 'react-reveal/Fade'
-import logo from '../assets/LOGO-01.png'
+import logo from '../assets/LOGO-02.png'
 const Hero = () => {
   const handleDownButton = () => {
     document.getElementById('info-cards').scrollIntoView({behavior: "smooth",  inline: "nearest"})
